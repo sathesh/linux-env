@@ -1,3 +1,4 @@
+########### Sthesh Start 
 ##
 # Things the user might wish to set.
 export USER_PATH="." # Extra paths.
@@ -23,13 +24,20 @@ source ~/.dots/shortcuts
 source ~/.dots/gitcuts
 
 
+## Bash history commands syncin with all terminals
+shopt -s histappend
+export PROMPT_COMMAND="history -a && history -n"
+##
+
+
 ################
 ## Set Prompt ##
 ################
-RED='\e[0;31m'
-BLUE='\e[0;34m'
-NO_COLOUR='\e[0m'
-HOST=`/bin/hostname`
-SHOST=${HOST: -10}
-PS1="$SHOST:\W\$"
+#RED='\e[0;31m'
+#BLUE='\e[0;34m'
+#NO_COLOUR='\e[0m'
+#HOST=`/bin/hostname`
+#SHOST=${HOST: -10}
+#PS1="$SHOST:\W\$"
 #PS1="$BLUE[$RED\`echo \$CLONE\`$BLUE]$NO_COLOUR\u@\h:\W\$ "
+###### Sathesh end ##
